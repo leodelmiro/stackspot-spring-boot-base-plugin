@@ -70,3 +70,8 @@ spec:
     project_name_lower: "{{ artifact_id | replace('-','') | replace('_','') | lower }}"
     project_base_package: "{{ group_name }}.{{ project_name_lower }}"
     group_name_package: "{{ group_name | group_id_folder }}"
+  hooks:
+    - type: run
+      trigger: after-render
+      commands:
+        - chmod +x mvnw mvnw.cmd
