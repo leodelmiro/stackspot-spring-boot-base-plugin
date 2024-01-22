@@ -2,9 +2,9 @@ schema-version: v2
 kind: plugin
 metadata:
   name: spring-boot-base-plugin
-  display-name: spring-boot-base-plugin
+  display-name: Spring Boot Kotlin Maven Base Plugin
   description: Spring Boot + Kotlin Rest API
-  version: 0.0.2
+  version: 0.0.3
   picture: plugin.png
 spec:
   type: app
@@ -16,6 +16,7 @@ spec:
   single-use: False
   repository: https://github.com/leodelmiro/stackspot-spring-boot-base-plugin.git
   technologies: # Ref: https://docs.stackspot.com/create-use/create-content/yaml-files/plugin-yaml/#technologies-1
+    - Api
     - Kotlin
     - Maven
     - Spring Boot
